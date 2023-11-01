@@ -1,13 +1,13 @@
 //
-//  imagegeneratorUITestsLaunchTests.swift
-//  imagegeneratorUITests
+//  imagegenUITestsLaunchTests.swift
+//  imagegenUITests
 //
 //  Created by Danyal Nemati on 11/1/23.
 //
 
 import XCTest
 
-final class imagegeneratorUITestsLaunchTests: XCTestCase {
+final class imagegenUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
