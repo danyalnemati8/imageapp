@@ -8,25 +8,32 @@
 import Foundation
 
 enum ImageStyle: String,CaseIterable {
-    case realism
-    case Anime
-    case threeDRender
     case surrealism
+    case realism
+    case threeDRender
+    case minimalism
+    case abstract
     case retro
+    case geometric
     
-    var title: String{
+    
+    var title: String {
         switch self {
-        case .realism:
-            return "Realism"
-        case .Anime:
-            return "Anime"
-        case .threeDRender:
-            return "3D Render"
         case .surrealism:
             return "Surrealism"
+        case .realism:
+            return "Realism"
+        case .threeDRender:
+            return "3D Render"
+        case .minimalism:
+            return "Minimalism"
+        case .abstract:
+            return "Retro"
         case .retro:
-            return "Retro"        }
-            
+            return "Retro"
+        case .geometric:
+            return "Geometric"
         }
+    }
     }
 

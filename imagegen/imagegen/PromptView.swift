@@ -8,7 +8,6 @@ import OpenAIKit
 
 import SwiftUI
 
-final class ViewModel:
 
 struct PromptView: View {
     var body: some View {
@@ -21,11 +20,28 @@ struct PromptView: View {
                 .font(.title3)
                 .bold()
                 .foregroundColor(.white)
-            HStack{
-                ForEach(ImageStyle.allCases, id: \.self){
-                    imageStyle in
-                    Text(imageStyle.title)
-                        .foregroundColor(.white)
+            GeometryReader { reader in
+                ScrollView (.horizontal){
+                    HStack{
+                        ForEach(ImageStyle.allCases, id: \.self){
+                            imageStyle in
+                            Image(imageStyle
+                                .rawValue)
+                                .resizable()
+                                .background(Color
+                                    .blue)
+                                .scaledToFill()
+                                .frame(width:
+                                    reader.size
+                                    .width * 0.4,
+                                    height:
+                                    reader.size
+                                    .width * 0.4
+                                       * 1.4)
+                                .clipped()
+                            
+                        }
+                    }
                 }
             }
             
