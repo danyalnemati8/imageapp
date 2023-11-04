@@ -4,8 +4,11 @@
 //
 //  Created by Danyal Nemati on 11/1/23.
 //
+import OpenAIKit
 
 import SwiftUI
+
+final class ViewModel:
 
 struct PromptView: View {
     var body: some View {
